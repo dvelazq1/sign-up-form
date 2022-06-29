@@ -1,3 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    border: 0.7mm double rgb(231, 183, 244);
+    padding: 15px 25px;
+    text-align: center;
+    height: calc(1vwh);
+}
+h1 {
+    color: rgb(231, 183,244);
+    font-family:cursive;
+    font-size: 35px;
+    margin-top: 10px;
+}
 input {
     border: 0.7mm double rgb(231, 183, 244);
     text-transform: uppercase;
