@@ -4,20 +4,29 @@ body {
     flex-direction: row;
     align-items: center;
     background: linear-gradient(#f7eff0d6, rgb(228, 196, 199));
-    gap: 50px;
 }
 
 .container {
     flex-direction: row;
-    margin: 0 auto;
+    margin-left:auto;
 }
 
+#bgImg {
+    margin-right: auto;
+}
+.signUp {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .form {
     gap: 30px;
     border-radius: 10%;
     background-color: rgb(255, 255, 255);
     padding: 50px 120px;
     margin-right: 50px;
+    margin-left: 50px;
     text-align: center;
     box-shadow: 12px 12px 2px 1px rgba(236,190,198,255);;
 }
@@ -25,41 +34,70 @@ body {
 .firstInputs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .secondInputs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .allInputs {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
 }
 
 h1 {
+    color: #f6a1b5;
+    font-family:cursive;
+    margin-left: 50px;
+    font-size: 60px;
+    line-height: 1px;
+}
+
+h2 {
     color: #eba2b3;
     font-family:cursive;
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 10px;
     text-shadow: #000000;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    color:#7a7878;
 }
 input {
     border: 0.7mm double #f4ccdc;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: small;
+    font-size: 15px;
     padding: 3px;
 }
 button {
     border: 1mm double rgb(255, 255, 255);
     background-color:#f4ccdc;
     font-family: 'Courier New', Courier, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: medium;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding: 3px;
+ }
+
+
+ button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #f4ccdc;
+    border: 1mm double #f294c5;
+    box-shadow: 4px 0px 7px 4px rgba(244, 219, 238, 0.863);
+ }
+
+ #disclaimer {
+    opacity: 55%;
+    margin-left: 400px;
+    font-size: 16px;
  }
