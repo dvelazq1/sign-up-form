@@ -1,10 +1,12 @@
-var phoneNum = document.getElementById("phoneNum").value;
-
-function validatePhoneNum() {
-    if (phoneNum.length !== 10) {
-        return false;
-    }
-}
+var phoneNum = document.getElementById("phoneNum")
+const phoneError = document.querySelector('#tel-error');
+phoneNum.addEventListener("input", function (event) {
+    if (phoneNum.validity.patternMismatch) {
+        phoneNum.setCustomValidity("Phone number must be 10 digits long");
+    } else {
+        phoneNum.setCustomValidity('');
+    }     
+  }); 
 
 var password = document.getElementById("password"),
 confirmPassword = document.getElementById("confirmPassword")
@@ -18,4 +20,5 @@ function validatePassword() {
     }
 password.onchange = validatePassword;
 confirmPassword.onkeyup = validatePassword;
+
 
